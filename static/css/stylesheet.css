@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web');
+
+
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-size: 1.50rem;
+    background: #35404a;
+  }
+
+  html, body, div {
+    padding:0;
+    margin:0;
+  }
+
+  /* Positions each list item */
+  li {
+    margin: 0;
+    padding-left: 100px;
+    text-align: left;
+    list-style-position: inside;
+    transition: 0.5;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  /* This adds box around new list item */
+  ul li {
+    position: relative;
+    background:#555f67;
+    font-size: 18px;
+    padding: 5px;
+    padding-bottom: 5px;
+    margin-left: 70px;
+    width: 80%;
+    transition: 0.5s;
+  }
+
+  
+  ul li:hover {
+    background:  #5ed7bf;
+  }
+
+
+  .time {
+    position: absolute;
+    right: 0;
+    padding-top: 5px;
+    padding-right: 40px;
+    top: 0;
+  }
+
+  .close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    background-color: #555f67;
+  }
+
+  .close:hover {
+    background-color: #f44336;
+  }
+
+
+  
+  .header {
+    text-align: center;
+    width: 100%;
+    padding: 30px;
+    background: #35404a;
+    color: white;
+    font-size: 30px;
+    position: relative;
+    font-family: 'Titillium Web', sans-serif;
+
+  }
+  
+  section {
+    color: #fff;
+    text-align: center;
+  }
+  
+  
+  /* The <article> tag specifies independent, self-contained content. */
+  article {
+    position: relative;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .items {
+    margin: 5px auto;
+  }
+
+
+  h1 {
+    font-size: 1.50rem;
+  }
+
+  /* Wrap everything under the header in a container */
+  .container {
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Define section for the clock portion */
+  .left {
+    background-color:#35404a;
+    position: absolute;
+    left: 0px;
+    width: 50%;
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+    padding-top: 30px;
+  }
+  
+  /* Define section for the todo list portion */
+  .right {
+    display: inline-block;
+    background-color: #35404a;
+    position: absolute;
+    right: 0px;
+    width: 50%;
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+
+  }
+
+  /* Define class for all buttons */
+  .button {
+    text-align: center;
+    font-size: 16px;
+    padding: 11px;
+    width: 25%;
+    color: white;
+    background: #516269;
+    border-color:#5ed7bf;
+    font-family: 'Titillium Web', sans-serif;
+  }
+
+  .button:hover {
+    background-color:#5ed7bf;
+  }
+
+  /* Design the input field */
+  input {
+    margin: 0;
+    border: none;
+    width: 47%;
+    padding: 10px;
+    font-size: 16px;
+    transition: 0.5s;
+    color: #516269;
+    font-family: 'Titillium Web', sans-serif;
+  }
+
+  .smallInput {
+    width: 100px;
+    margin-left: 10px;
+    color: #516269;
+    font-family: 'Titillium Web', sans-serif;
+  }
+
+  #countdown {
+      position: relative;
+      display: inline-block;
+      font-size: 50px;
+      width: 50%;
+      padding: 10px;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      margin: 0;
+  }
+
+  ::placeholder {
+    color: #516269;
+    font-family: 'Titillium Web', sans-serif;
+  }
+
+  #newTask {
+    color: #516269;
+    font-family: 'Titillium Web', sans-serif;
+  }
+
+
+
+
+  

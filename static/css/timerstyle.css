@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web');
+
+
+.tabContent {
+   display: none;
+}
+
+.tabLinks {
+   color: white;
+   background: #516269;
+   font-size: 16px;
+   padding: 10px;
+   border: none;
+   margin: 5px;
+   font-family: 'Titillium Web', sans-serif;
+}
+
+.tabLinks:hover {
+   background-color:#5ed7bf;
+ }
+
+
+.active {
+   background: #4ee3c2;
+}
+
+
+#startButton, #stopButton {
+   color: white;
+   background:#5bc25d;
+   font-size: 36px;
+   padding: 10px;
+   font-family: 'Titillium Web', sans-serif;
+   border: none;
+   width: 200px;
+   height: 100px;
+
+}
+
+#stopButton {
+   background:#ff5757;
+}
+
+
+#startButton:hover {
+   width: 190px;
+   height: 90px;
+}
+
+#stopButton:hover {
+   width: 190px;
+   height: 90px;
+}
+
+
+#PomoCount, #sBreakCount, #lBreakCount {
+  font-size: 10.50rem;
+  margin: 0px;
+  padding: 0px;
+}

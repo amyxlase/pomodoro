@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PomoToDo</title>
+    <link rel="stylesheet" type="text/css" href="/css/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="/css/timerstyle.css">
+    <script src="/javascript/todo.js"></script>
+    <script src="/javascript/timer.js"></script>
+</head>
+
+<body >
+
+  <div class="header">
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+
+    <h1>PomoToDo - Productivity Web App </h1>
+  </div>
+
+  <section class="container">
+    <div class="left" id="timer">
+      <article>
+           <div class="timerTabs" >
+              <button id="pomButton" class="tabLinks" onClick="switchTimer(event, 'Pomo');">POMODORO</button>
+              <button id="shortButton" class="tabLinks" onClick="switchTimer(event, 'sBreak');">SHORT BREAK</button>
+              <button id="longButton" class="tabLinks" onClick="switchTimer(event, 'lBreak');">LONG BREAK</button>
+           </div>
+
+           <div id="Pomo" class="tabContent">
+              <h1 id ="PomoCount"></h1>
+           </div>
+
+           <div id="sBreak" class="tabContent">
+              <h1 id ="sBreakCount"></h1>
+           </div>
+
+           <div id="lBreak" class="tabContent">
+              <h1 id ="lBreakCount"></h1>
+           </div>
+
+           <div>
+              <button class="startBtn" id="startButton" onclick="startTimer()"> START </button>
+              <button class="startBtn" id="stopButton" onclick="stopButtonClicked()" > STOP </button>
+              <p id="fu_message"></p>
+           </div>
+   <script src='/javascript/timer.js'></script>
+      </article>
+    </div>
+
+    <div class="right">
+      <div>
+      <article>
+        <h1>Todo list</h1>
+        <input type="text" id="newTask"  placeholder="Add a new task"/>
+        <span onclick="addTaskButtonClicked()" class="button" id="newTaskButton">Add</span>
+        <input type="number" min="0" max="1440" class="smallInput" id="minCount"  placeholder="minutes"/>
+        <input type="number" min="1" max="10" class="smallInput" id="pomoCount"  placeholder="# pomo"/>
+        <!--<span onclick="addPomoButtonClicked()" class="button" id="newPomoButton">Pomo</span> -->
+        <!--<span class="text" id="pomoCount">0 min</span> -->
+      </article>
+    </div>
+      <div class="items">
+        <ul id="list" onclick=select()></ul>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
