@@ -1,1 +1,1 @@
-written with 3 other friends for the Hack Your Own program using JS/HTML/CSS
+written with 3 other developers for the Hack Your Own program using JS/HTML/CSS
